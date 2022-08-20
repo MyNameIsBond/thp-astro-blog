@@ -1,0 +1,27 @@
+---
+import Post from "./Post.astro";
+
+const posts = (await Astro.glob("../pages/blog/*.{md,mdx}")).sort(
+    (a, b) =>
+        new Date(b.frontmatter.pubDate).valueOf() -
+        new Date(a.frontmatter.pubDate).valueOf()
+);
+---
+
+<div class="container max-w-3xl pt-10">
+    {
+        posts.map((post) => (
+            <Post
+                key={post.frontmatter.filePath}
+                title={post.frontmatter.title}
+                description={post.frontmatter.description}
+                pubDate={post.frontmatter.pubDate}
+                slug={post.frontmatter.slug}
+                heroImage={post.frontmatter.heroImage}
+                tags={post.frontmatter.tags}
+                categories={post.frontmatter.categories}
+                link={post.url}
+            />
+        ))
+    }
+</div>

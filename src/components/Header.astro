@@ -1,0 +1,30 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import logo from "../../images/logo.svg";
+import { links } from "../config";
+---
+
+<header class="bg-purple-800">
+	<nav
+		class="flex flex-row justify-between py-4 container origin-center content-center"
+	>
+		<img src={logo} width="100" />
+		<div class="self-center">
+			{
+				links.map((link) => (
+					<HeaderLink
+						class="px-5 py-2 font-medium text-purple-300 hover:bg-opacity-30 hover:bg-purple-50 hover:text-white rounded-md"
+						href={link.url}
+						{...link}
+					>
+						{link.title}
+					</HeaderLink>
+				))
+			}
+		</div>
+		<button
+			class="px-3 py-2 bg-purple-50 bg-opacity-30 font-normal rounded-md block text-white hover:bg-opacity-75 hover:text-purple-900"
+			>subscribe
+		</button>
+	</nav>
+</header>

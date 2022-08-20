@@ -1,0 +1,14 @@
+---
+import Subscription from "./Subscription.astro";
+
+const today = new Date();
+---
+
+<div>
+	<Subscription />
+	<footer
+		class="text-gray-900 text-sm text-opacity-60 mx-auto w-full border-t border-opacity-10 my-2 py-2 border-gray-900 flex place-content-center"
+	>
+		&copy; {today.getFullYear()} The Happy Programmer. All rights reserved.
+	</footer>
+</div>

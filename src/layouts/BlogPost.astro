@@ -1,0 +1,104 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import arrow from "../../public/images/arrow.svg";
+import { Image } from "@astrojs/image/components";
+
+export interface Props {
+	content: {
+		title: string;
+		description: string;
+		pubDate?: string;
+		updatedDate?: string;
+		heroImage?: string;
+		categories?: string[];
+	};
+}
+
+const {
+	content: {
+		title,
+		categories,
+		description,
+		pubDate,
+		updatedDate,
+		heroImage,
+	},
+} = Astro.props as Props;
+---
+
+<html>
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			.title {
+				font-size: 2em;
+				margin: 0.25em 0 0;
+			}
+			hr {
+				border-top: 1px solid #ddd;
+				margin: 1rem 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<header class="bg-purple-800 py-36 rounded-b-lg">
+				<div
+					class="max-w-4xl container flex gap-x-10 flex-row content-center"
+				>
+					<a href="/">
+						<img
+							src={arrow}
+							class="bg-purple-50 bg-opacity-20 hover:bg-opacity-60 -mt-1 p-2 rounded-full"
+							height="60"
+							width="60"
+							alt="arrow"
+						/>
+					</a>
+					<div class="flex flex-col">
+						<div>
+							{
+								categories.map((category) => (
+									<span class="text-white border-white border py-1.5 px-4 uppercase text-sm rounded-l-md">
+										{category}
+									</span>
+								))
+							}
+							{
+								pubDate && (
+									<time class="border-white border uppercase text-sm bg-white text-purple-900 py-1.5 px-4 rounded-r-md">
+										{pubDate}
+									</time>
+								)
+							}
+						</div>
+						<h1 class="pt-10 pb-6 text-5xl font-bold text-white">
+							{title}
+						</h1>
+						<p class="text-white text-opacity-80">{description}</p>
+					</div>
+					<div class="ml-auto">
+						{
+							heroImage && (
+								<Image
+									width={300}
+									height={200}
+									src={heroImage}
+									alt="hero"
+								/>
+							)
+						}
+					</div>
+				</div>
+			</header>
+			<div class="prose contianer mx-auto">
+				<slot />
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
