@@ -2,7 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import arrow from "../../public/images/arrow.svg";
+import arrow from "/images/arrow.svg";
 import { Image } from "@astrojs/image/components";
 
 export interface Props {
@@ -62,7 +62,7 @@ const {
 					<div class="flex flex-col">
 						<div>
 							{
-								categories.map((category) => (
+								categories?.map((category) => (
 									<span class="text-white border-white border py-1.5 px-4 uppercase text-sm rounded-l-md">
 										{category}
 									</span>
