@@ -16,13 +16,13 @@ The first step we need to take is to make two Asset colors. Borth for light and 
 
 By going to assets we can add the wanted colors, feel free to choose your own combination. I will be choosing Dark Green and Teal because they blend together beautifully.
 
-![Xcode how to add a color on Assets ](/images/Screenshot-2020-11-08-at-04.07.37-1.png 'Xcode how to add a color on Assets ')
+![Xcode how to add a color on Assets ](/images/Screenshot-2020-11-08-at-04.07.37-1.png 'Xcode how to add a color on Assets')
 
 Add Colors on Assets file
 
 Try to pick light colours for the light theme and dark for the dark theme. SwifUI allows us to set colors which will change according to the theme we are currently in.
 
-![Xcode how to add a color on Assets ](/images/Screenshot-2020-11-08-at-04.06.24-1.png 'Xcode how to add a color on Assets ')
+![Xcode how to add a color on Assets ](/images/Screenshot-2020-11-08-at-04.06.24-1.png 'Xcode how to add a color on Assets')
 
 Add a Color, you will find at the bottom
 
@@ -30,11 +30,11 @@ This is my suggested combination
 
 The bellow combination is a purple in light mode and a teal in dark mode. As you can see, Xcode gives your the opportunity to choose 8-bit RGB. The choice is yours. The LinearGradient will work with any color combination, but bear in mind it has to fulfil aesthetics requirements.
 
-![Xcode how to add a color on Assets ](/images/Screenshot-2020-11-08-at-04.33.00.png 'Xcode how to add a color on Assets ')
+![Xcode how to add a color on Assets ](/images/Screenshot-2020-11-08-at-04.33.00.png 'Xcode how to add a color on Assets')
 
 This is the dark mode teal color.
 
-![Xcode how to add a color on Assets ](/images/Screenshot-2020-11-08-at-04.33.08-1-951x1024.png 'Xcode how to add a color on Assets ')
+![Xcode how to add a color on Assets ](/images/Screenshot-2020-11-08-at-04.33.08-1-951x1024.png 'Xcode how to add a color on Assets')
 
 Do the same with another combination of colors.
 
@@ -42,11 +42,11 @@ This is my Color1
 
 The orange
 
-![Xcode how to add a color on Assets ](/images/Screenshot-2020-11-08-at-04.59.21-1024x751.png 'Xcode how to add a color on Assets ')
+![Xcode how to add a color on Assets ](/images/Screenshot-2020-11-08-at-04.59.21-1024x751.png 'Xcode how to add a color on Assets')
 
 The Green
 
-![Xcode how to add a color on Assets to make a LinearGradient in SwiftUI](/images/Screenshot-2020-11-08-at-04.59.43-1024x756.png 'Xcode how to add a color on Assets ')
+![Xcode how to add a color on Assets to make a LinearGradient in SwiftUI](/images/Screenshot-2020-11-08-at-04.59.43-1024x756.png 'Xcode how to add a color on Assets')
 
 ## Create data to iterate
 
