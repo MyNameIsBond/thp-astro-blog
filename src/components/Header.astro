@@ -1,6 +1,6 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import logo from "../../images/logo.svg";
+import logo from "/images/logo.svg";
 import { links } from "../config";
 ---
 
@@ -8,7 +8,7 @@ import { links } from "../config";
 	<nav
 		class="flex flex-row justify-between py-4 container origin-center content-center"
 	>
-		<img src={logo} width="100" />
+		<img loading="lazy" src={logo} width={100} height={30} alt="logo" />
 		<div class="self-center">
 			{
 				links.map((link) => (

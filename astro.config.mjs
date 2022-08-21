@@ -4,12 +4,13 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import image from '@astrojs/image';
 
+// https://astro.build/config
 export default defineConfig({
   markdown: {
     shikiConfig: {
-      theme: 'dracula',
-    },
+      theme: 'dracula'
+    }
   },
   site: 'https://example.com',
-  integrations: [mdx(), sitemap(), tailwind(), image()],
+  integrations: [mdx(), sitemap(), tailwind(), image()]
 });

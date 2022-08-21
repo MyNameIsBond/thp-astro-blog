@@ -1,13 +1,11 @@
 ---
-import { Image } from "@astrojs/image/components";
-
 interface Post {
     title: String;
     slug: String;
     description: String;
     pubDate: String;
-    tags: [];
-    categories: [];
+    tags: string[];
+    categories: string[];
     heroImage: String;
     link: String;
 }
@@ -34,12 +32,18 @@ const { title, link, description, pubDate, tags, categories, heroImage } =
             </time>
         </div>
         <div>
-            <a href={link} class="text-3xl font-bold hover:text-purple-900">
+            <a href={link as string} class="text-3xl font-bold hover:text-purple-900">
                 {title}
             </a>
 
             <p class="text-gray-900 opacity-90 pt-3">{description}</p>
         </div>
     </div>
-    <Image class="rounded-md" src={heroImage} width={200} height={200} />
+    <img
+        loading="lazy"
+        class="rounded-md"
+        src={heroImage as string}
+        width={200}
+        height={200}
+    />
 </div>
