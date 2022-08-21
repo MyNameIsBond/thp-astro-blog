@@ -141,7 +141,7 @@ let messages = [
     Messages( name: "Angela" , photo: "user8" , message: "hahaha 🤭", time: "21:50"),
     Messages( name: "James" , photo: "user9" , message: "Goodnight 🥱", time: "21:20"),
     Messages( name: "James" , photo: "user10" , message: "I got my first donate 🤑", time: "20:40"),
-]2
+]
 ```
 
 ## Combine Everything Together
