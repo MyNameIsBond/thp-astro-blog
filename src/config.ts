@@ -10,11 +10,11 @@ export const links = [
     url: '/',
   },
   {
-    title: 'About',
-    url: '/about',
+    title: 'The Happy Programmer',
+    url: 'http://thehappyprogrammer.com/',
   },
   {
-    title: 'Blog',
-    url: '/blog',
+    title: 'Happy NuxtJS',
+    url: 'https://happynuxtjs.com',
   },
 ];

@@ -6,10 +6,12 @@ import { links } from "../config";
 
 <header class="bg-purple-800">
 	<nav
-		class="flex flex-row justify-between py-4 container origin-center content-center"
+		class="flex flex-row justify-between px-5 md:px-0 py-4 container origin-center content-center"
 	>
-		<img loading="lazy" src={logo} width={100} height={30} alt="logo" />
-		<div class="self-center">
+		<a href="/">
+			<img loading="lazy" src={logo} width={100} height={30} alt="logo" />
+		</a>
+		<div class="self-center hidden md:block">
 			{
 				links.map((link) => (
 					<HeaderLink
