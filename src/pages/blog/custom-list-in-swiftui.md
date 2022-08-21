@@ -285,7 +285,7 @@ extension Color {
 
 The second step is to create the tags.
 
-```
+```swift
 struct nospaceTags: View {
 
     var tags: Array<String>
@@ -507,7 +507,7 @@ struct blurTags:  View {
 
 The Next thing we will do is imbed the BlurView from UIKit so it will be possible to use it in SwftUI. The code for that is below.
 
-```
+```swift
 struct BlurView: UIViewRepresentable {
 
     let style: UIBlurEffect.Style
