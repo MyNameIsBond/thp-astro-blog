@@ -17,7 +17,7 @@ const { title, link, description, pubDate, tags, categories, heroImage } =
 <div
     class="flex flex-row w-full py-10 border-b border-purple-100 justify-between content-center"
 >
-    <div class="max-w-md">
+    <div>
         <div class="flex flex-row content-center py-4">
             {
                 tags.map((tag) => (
@@ -32,18 +32,13 @@ const { title, link, description, pubDate, tags, categories, heroImage } =
             </time>
         </div>
         <div>
-            <a href={link as string} class="text-3xl font-bold hover:text-purple-900">
+            <a
+                href={link as string}
+                class="text-3xl font-bold hover:text-purple-900"
+            >
                 {title}
             </a>
-
             <p class="text-gray-900 opacity-90 pt-3">{description}</p>
         </div>
     </div>
-    <img
-        loading="lazy"
-        class="rounded-md hidden md:block"
-        src={heroImage as string}
-        width={200}
-        height={200}
-    />
 </div>
