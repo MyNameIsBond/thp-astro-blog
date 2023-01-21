@@ -2,7 +2,7 @@
 
 this repo is a blog made in astro, which claims to be faster that NextJS.
 
-# Experiment
+# Experiment.
 
 I am planning to move the blog part on Astro. The reason I am doing this is to see if hits will be better with Astro.
 
